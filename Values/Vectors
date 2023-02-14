@@ -1,3 +1,20 @@
+Vectors are often used to represent geometric entities such as points, directions, and normals in 3D space.
+For example, a float3 vector can represent a position in 3D space, while a float3 vector with unit length can represent a direction.
+
+Vectors can be used to perform arithmetic operations such as addition, subtraction, multiplication, and division.
+For example, to move a point in 3D space, you can add a vector representing the displacement to the original point.
+
+Vectors can be normalized to have unit length, which can be useful for representing directions or for computing lighting effects
+such as diffuse and specular reflections.
+
+Dot products and cross products can be used to perform geometric calculations such as finding the angle between two vectors or computing a normal vector to a plane.
+
+Some graphics programming languages and libraries provide built-in vector types and functions for working with vectors,
+while others require you to implement your own vector math functions.
+
+When working with multiple vectors of different lengths or types, it's important to ensure that the dimensions and
+types are compatible before performing any operations or calculations.
+
 Commonly used vector types in graphics programming, along with their characteristics:
 
 float: A single-precision floating point type that can store a single value. It has a range of approximately ±3.4 × 10^38 and a precision of about 7 decimal digits.
@@ -35,6 +52,11 @@ uint4: A 4D vector of four unsigned integer values.
 
 Note that the exact range and precision of these types may vary depending on the platform and compiler used. Also, some programming languages 
 or libraries may have their own custom vector types with different names and characteristics.
+
+
+Overall, vectors are a fundamental concept in computer graphics programming and are used extensively in many areas
+such as 3D modeling, rendering, and game development.
+
 
 
 
