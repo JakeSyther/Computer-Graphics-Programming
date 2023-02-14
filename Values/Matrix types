@@ -1,1 +1,42 @@
 
+In computer graphics programming, matrices are collections of vectors that are used to represent geometric transformations, such as rotations,
+translations, and scaling. A matrix is a rectangular array of numbers, and can be represented in code as a multi-dimensional array.
+Common matrix types include float3x3 and float4x4, which respectively represent 3x3 and 4x4 matrices.
+
+Each element of a matrix represents a combination of the scale, rotation, and translation factors that are applied to the geometry.
+For example, a 3x3 matrix can represent a 2D transformation, such as a rotation or scaling, while a 4x4 matrix can represent a 3D transformation,
+such as a translation or projection.
+
+An example of a 3x3 matrix in code:
+--------------------------------------------------------------------------------
+float3x3 myMatrix = float3x3(1, 0, 0,
+                             0, 1, 0,
+                             0, 0, 1);
+--------------------------------------------------------------------------------
+
+This matrix represents the identity transformation, which means that it has no effect on the geometry that it is applied to.
+Each row of the matrix represents one of the coordinate axes (x, y, and z), and each column represents a combination of scaling,
+rotation, or translation along that axis.
+
+Matrix multiplication is used to combine multiple transformations into a single matrix. For example, to rotate an object around its origin and then translate it,
+we can multiply a rotation matrix by a translation matrix:
+
+------------------------------------------------------------------------------------------------------------------------
+float3x3 rotationMatrix = // define the rotation matrix
+float3 translationVector = // define the translation vector
+
+float3x3 combinedMatrix = rotationMatrix * float3x3(1, 0, 0,
+                                                    0, 1, 0,
+                                                    translationVector.x, translationVector.y, 1);
+------------------------------------------------------------------------------------------------------------------------
+
+In this example, we are using a 3x3 matrix to represent the translation, so we add the translation vector as the third column of the matrix.
+Once we have the combined matrix, we can apply it to the geometry to perform both the rotation and translation at the same time.
+
+Matrices can also be used to represent the perspective projection of a 3D scene onto a 2D image plane.
+The projection matrix is a 4x4 matrix that is used to convert 3D coordinates into 2D screen coordinates.
+This matrix includes factors such as the field of view, aspect ratio, and near/far clipping planes, and is essential for rendering 3D scenes with accurate perspective.
+
+Overall, matrices are a powerful tool for representing transformations in computer graphics programming,
+and are an essential component of many graphics-related tasks. By combining matrices and other types of variables,
+it is possible to create complex and realistic 3D scenes with high levels of detail and accuracy.
