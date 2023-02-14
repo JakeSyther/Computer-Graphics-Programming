@@ -1,1 +1,30 @@
+In computer graphics, a texture is a 2D image or data structure used to add detail or color to 3D models or 2D images.
+Textures are sampled in a shader using a texture sampler type. In general, there are several texture sampler types,
+each with its own unique characteristics and use cases. Here is an overview of the most common texture sampler types:
+
+Sampler1D: A 1D texture sampler that is used to sample 1D textures. 1D textures are often used for things like color gradients and other 1D data.
+
+Sampler2D: A 2D texture sampler that is used to sample 2D textures. 2D textures are the most commonly used texture type and are used for things like images,
+           maps, and other 2D data.
+           
+Sampler3D: A 3D texture sampler that is used to sample 3D textures. 3D textures are used to create volumetric effects and to store data in a 3D space.
+
+SamplerCube: A cube texture sampler that is used to sample cube maps. Cube maps are often used for things like reflections and refractions, skyboxes,
+             and other cube-shaped data.
+
+Sampler2DArray: A 2D array texture sampler that is used to sample multiple 2D textures in an array.
+                This is useful for things like sprite sheets, where multiple images are stored in a single texture.
+
+SamplerCubeArray: A cube array texture sampler that is used to sample multiple cube maps in an array.
+                  This is useful for things like skyboxes that have multiple layers.
+                  
+                  
+Each texture sampler type has its own set of methods and properties for sampling textures in a shader.
+For example, the Sampler2D type has a method called tex2D that is used to sample a 2D texture.
+Other texture sampler types have similar methods for sampling textures.
+
+When using textures in a shader, it is important to consider the texture sampler type and its associated properties and methods
+to ensure that the texture is sampled correctly and efficiently.
+
+
 
