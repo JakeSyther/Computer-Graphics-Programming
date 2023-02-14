@@ -1,0 +1,13 @@
+In computer graphics, a matrix is a mathematical structure that is used to represent transformations of 2D or 3D geometric objects,
+such as rotation, scaling, and translation. Matrices are often used in computer graphics programming to perform these transformations efficiently and accurately.
+
+A matrix is a rectangular array of numbers that is used to represent a linear transformation. A 2D matrix typically has 3 rows and 3 columns,
+while a 3D matrix typically has 4 rows and 4 columns. The values in the matrix represent the scaling, rotation,
+and translation factors that are applied to the object being transformed.
+
+In computer graphics programming, matrices are used to transform 3D points and vectors from one coordinate system to another. 
+For example, when rendering a 3D object on a 2D screen, the object must be projected onto the 2D screen using a matrix transformation. 
+Matrices are also used to transform objects in space, such as rotating or scaling a 3D model in a game.
+
+Matrices are an important concept in computer graphics programming and are used extensively in 3D graphics and game development.
+Understanding how matrices work and how to use them can be a key component of creating complex and visually impressive graphics in games and other applications.
