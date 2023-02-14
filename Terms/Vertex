@@ -1,0 +1,14 @@
+In computer graphics, a vertex is a point in 2D or 3D space that defines a specific location on a geometric object, such as a polygon or a mesh.
+Vertices are commonly used to define the corners or edges of shapes, and they can be connected together to form a complete object.
+
+In 3D graphics programming, vertices are often represented as a set of three-dimensional coordinates (x, y, z) that describe the location of a point in space. 
+In addition to the spatial position, vertices can also store additional information, such as the color or texture coordinates of the point.
+
+When rendering a 3D object, vertices are typically used to define the shape and position of the object,
+and they are processed by the graphics pipeline to transform the object into the final image that is displayed on the screen.
+This processing involves applying various transformations, such as scaling, rotation, and translation, to the vertices to position
+them correctly in space and create the desired visual effect.
+
+In computer graphics programming, vertices are an important concept and are used extensively in 3D graphics and game development.
+Understanding how vertices work and how to use them can be a key component of creating complex and visually impressive graphics in games and other applications.
+
