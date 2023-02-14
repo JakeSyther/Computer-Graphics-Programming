@@ -1,0 +1,19 @@
+In computer graphics, a fragment is a small piece of a larger graphical element that is being rendered on the screen.
+A fragment is essentially a single pixel on the screen, and it represents the basic unit of processing in many graphics systems.
+
+When an image is rendered on the screen, it is typically broken down into a series of fragments that correspond to the pixels that make up the image. 
+Each fragment contains information about the color, depth, and other attributes of the pixel it represents.
+
+Fragments are typically processed by the graphics hardware using specialized programs called shaders. 
+Fragment shaders are programs that are designed to run on each fragment and determine the final color and other attributes of the pixel that the fragment represents. 
+These shaders can perform complex calculations and use various techniques to simulate lighting, shadows, textures,
+and other effects that contribute to the final appearance of the image on the screen.
+
+Overall, fragments are an important concept in computer graphics because they provide a way to break down complex images into smaller 
+units that can be efficiently processed by the graphics hardware. By working with fragments, graphics systems can render complex images 
+with high levels of detail and realism, while still maintaining smooth performance and high frame rates.
+
+
+
+
+
