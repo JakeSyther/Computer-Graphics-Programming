@@ -1,0 +1,40 @@
+Commonly used vector types in graphics programming, along with their characteristics:
+
+float: A single-precision floating point type that can store a single value. It has a range of approximately ±3.4 × 10^38 and a precision of about 7 decimal digits.
+
+float2: A 2D vector of two single-precision floating point values. It can represent 2D texture coordinates or 2D positions.
+
+float3: A 3D vector of three single-precision floating point values. It can represent 3D positions or directions.
+
+float4: A 4D vector of four single-precision floating point values. It can represent 3D positions or colors with RGBA components.
+
+double: A double-precision floating point type that can store a single value with higher precision than float. It has a range of approximately
+        ±1.7 × 10^308 and a precision of about 15 decimal digits.
+        
+double2: A 2D vector of two double-precision floating point values.
+
+double3: A 3D vector of three double-precision floating point values.
+
+double4: A 4D vector of four double-precision floating point values.
+
+int: A signed integer type that can store a single value. It typically uses 32 bits of memory.
+
+int2: A 2D vector of two signed integer values.
+
+int3: A 3D vector of three signed integer values.
+
+int4: A 4D vector of four signed integer values.
+
+uint: An unsigned integer type that can store a single value. It typically uses 32 bits of memory.
+
+uint2: A 2D vector of two unsigned integer values.
+
+uint3: A 3D vector of three unsigned integer values.
+
+uint4: A 4D vector of four unsigned integer values.
+
+Note that the exact range and precision of these types may vary depending on the platform and compiler used. Also, some programming languages 
+or libraries may have their own custom vector types with different names and characteristics.
+
+
+
