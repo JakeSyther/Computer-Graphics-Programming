@@ -1,0 +1,45 @@
+In computer graphics and game development, a pipeline refers to the sequence of steps that are used to process graphics data and generate the final output that is 
+displayed on the screen. The graphics pipeline typically consists of several stages, each of which performs a specific set of operations on the input data.
+
+The exact details of the graphics pipeline can vary depending on the hardware and software platform,
+but some of the common stages in a typical graphics pipeline include:
+
+1. Input Assembly: This stage reads in the raw data for the 3D objects that are to be rendered, including vertex data, texture data, and other information.
+
+2. Vertex Processing: In this stage, the individual vertices in the input data are transformed, manipulated, and optimized to create the final 3D objects
+   that will be rendered.
+   
+3. Rasterization : Rasterisation or rasterization is the task of taking an image described in a vector graphics format
+   and converting it into a raster image. The rasterized image may then be displayed on a computer display,
+   video display or printer, or stored in a bitmap file format.
+   
+4. Pixel Processing : In this stage, each individual pixel in the 2D images is processed to determine
+   its final color and other properties, such as transparency and depth.
+   
+5. Output Merger: This stage combines all of the processed pixels and creates the final output image that is sent to the display device.
+
+
+Understanding the graphics pipeline is important for graphics programmers and game developers
+because it can help them optimize their code and create more efficient and visually impressive graphics.
+By understanding how the different stages of the pipeline work and how they interact with each other,
+developers can create more efficient rendering algorithms and achieve better performance and visual quality
+in their applications.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
