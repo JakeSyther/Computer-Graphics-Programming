@@ -1,1 +1,38 @@
+Shaders are a type of program used in computer graphics to create and manipulate visual elements.
+They are typically used in 3D graphics to render realistic images of objects, surfaces, and lighting.
+Shaders work by manipulating the appearance of geometry, textures, and other graphical elements in real-time. 
+They can create a variety of visual effects such as reflections, shadows, highlights, and depth of field, among many others.
+
+In a typical graphics pipeline, shaders are used at several stages.
+First, the vertex shader takes in raw geometry and calculates the position of each vertex in 3D space.
+This information is then passed on to the next stage, the rasterization stage, which converts the vertices into individual pixels on the screen.
+The pixel shader then takes over, performing complex calculations to determine the final color of each pixel based on the geometry,
+textures, lighting, and other parameters of the scene.
+
+There are several different types of shaders, each with its own specific purpose and functionality. These include:
+
+1. Vertex shaders: These shaders are responsible for manipulating the position, color, and other properties of each vertex in a 3D object.
+
+2. Pixel shaders: These shaders calculate the final color of each pixel on the screen, based on a wide range of parameters such as the geometry,
+   lighting, and textures of the scene.
+
+3. Geometry shaders: These shaders are responsible for creating new geometry in real-time, based on the input geometry and other parameters.
+
+4. Compute shaders: These shaders are used for general-purpose computing tasks, such as image processing, physics simulations, and other calculations.
+
+5. Tessellation shaders: These shaders are used to add more detail to a 3D model by breaking down larger polygons into smaller ones.
+
+The code for shaders is typically written in a high-level programming language, such as C++ or HLSL (High-Level Shader Language).
+These programs are then compiled into machine code that can be executed directly by the graphics hardware.
+
+One of the most significant advantages of using shaders in computer graphics programming is that they allow for real-time rendering of complex visual effects.
+By performing complex calculations directly on the graphics hardware, shaders can create highly realistic images in real-time,
+with minimal impact on the performance of the rest of the computer system.
+
+In summary, shaders are a critical component of modern computer graphics programming.
+They allow developers to create highly realistic visual effects in real-time,
+and they are used at several stages of the graphics pipeline to manipulate the appearance of geometry,
+textures, lighting, and other graphical elements.
+
+
 
