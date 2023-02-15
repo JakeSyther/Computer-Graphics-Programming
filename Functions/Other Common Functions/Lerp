@@ -1,0 +1,72 @@
+The lerp function is a mathematical function commonly used in computer graphics and shader programming.
+It is used to interpolate linearly between two values based on a given interpolation factor.
+The interpolation factor, usually denoted as t, is a value between 0 and 1 that determines how much of each value to include in the output.
+
+The lerp function is defined mathematically as:
+--------------------------------------------------------------------------------------------------------------------------
+lerp(a, b, t) = a + (b - a) * t
+--------------------------------------------------------------------------------------------------------------------------
+In this formula, a and b are the two values to interpolate between, and t is the interpolation factor.
+
+
+
+
+
+
+
+Basic Example
+
+Here is a basic example of how the lerp function could be used in a shader to create a gradient effect:
+--------------------------------------------------------------------------------------------------------------------------
+float4 color1 = float4(1.0, 0.0, 0.0, 1.0);
+float4 color2 = float4(0.0, 0.0, 1.0, 1.0);
+float t = 0.5;
+float4 gradientColor = lerp(color1, color2, t);
+--------------------------------------------------------------------------------------------------------------------------
+In this example, two color values are defined (color1 and color2) as well as an interpolation factor of t = 0.5.
+The lerp function is then used to create a new color value (gradientColor) that is a linear interpolation between color1 and color2,
+with the amount of color1 and color2 determined by the value of t.
+
+
+
+
+
+
+Mid-Level Example
+
+Here is a mid-level example of how the lerp function could be used in a shader to blend between two textures
+--------------------------------------------------------------------------------------------------------------------------
+float4 texColor1 = texture2D(TextureSampler1, TexCoord);
+float4 texColor2 = texture2D(TextureSampler2, TexCoord);
+float t = 0.5;
+float4 blendedColor = lerp(texColor1, texColor2, t);
+--------------------------------------------------------------------------------------------------------------------------
+In this example, two texture samples are taken using different texture samplers (TextureSampler1 and TextureSampler2).
+The lerp function is then used to blend the two texture colors based on an interpolation factor of t = 0.5, resulting in a new blended color value (blendedColor).
+
+
+
+
+
+
+
+Advanced Example
+Here is an advanced example of how the lerp function could be used in a shader to implement an animated color gradient effect:
+--------------------------------------------------------------------------------------------------------------------------
+float4 baseColor      = float4(0.0, 0.0, 0.0, 1.0);
+float4 gradientColor1 = float4(1.0, 0.0, 0.0, 1.0);
+float4 gradientColor2 = float4(0.0, 0.0, 1.0, 1.0);
+
+float t = sin(Time) * 0.5 + 0.5;
+float4 animatedColor = lerp(gradientColor1, gradientColor2, t);
+float4 finalColor = lerp(baseColor, animatedColor, 0.5);
+--------------------------------------------------------------------------------------------------------------------------
+In this example, a base color value is defined (baseColor), as well as two gradient colors (gradientColor1 and gradientColor2) and an interpolation factor (t).
+The interpolation factor is calculated based on the current time, creating an animated effect. 
+The lerp function is then used to create an interpolated color value (animatedColor) based on the two gradient colors and the interpolation factor.
+Finally, the lerp function is used again to create a final color value (finalColor) that is a blend between the base color and the animated color, with a 50/50 mix.
+
+
+Overall, the lerp function is a powerful tool in shader programming that can be used in a wide variety of ways to create smooth transitions
+between different values, colors, textures, and more.
+
