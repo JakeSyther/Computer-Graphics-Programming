@@ -1,6 +1,6 @@
 The saturate function is a mathematical function commonly used in computer graphics and shader programming.
 It is used to "clamp" a value between the range of 0 and 1. Any value less than 0 is set to 0, and any value greater than 1 is set to 1.
-This function is useful in ensuring that values used to represent colors or other properties remain within the valid range.
+This function is useful in ensuring that values used to represent colours or other properties remain within the valid range.
 
 The saturate function is defined mathematically as:
 ----------------------------------------------------------------------------------------------------------------
